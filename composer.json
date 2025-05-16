@@ -1,0 +1,24 @@
+{
+    "name": "welabs/azure-scout",
+    "description": "Azure Search engine for Laravel Scout (monorepo package)",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Mahbub Rabbani",
+            "email": "mahbub.rucse@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "WeLabs\\AzureScout\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "WeLabs\\AzureScout\\ServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "dev"
+} 

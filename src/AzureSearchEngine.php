@@ -2,7 +2,6 @@
 
 namespace WeLabs\AzureScout;
 
-use App\Search\AzureSearchFilterBuilder;
 use Laravel\Scout\Engines\Engine;
 use Laravel\Scout\Builder;
 use Illuminate\Database\Eloquent\Collection;

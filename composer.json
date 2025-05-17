@@ -1,6 +1,7 @@
 {
     "name": "welabs/azure-scout",
-    "description": "Azure Search engine for Laravel Scout (monorepo package)",
+    "description": "Azure Search integration for Laravel Scout",
+    "type": "library",
     "license": "MIT",
     "authors": [
         {
@@ -12,6 +13,21 @@
         "psr-4": {
             "WeLabs\\AzureScout\\": "src/"
         }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "WeLabs\\AzureScout\\Tests\\": "tests/"
+        }
+    },
+    "require": {
+        "php": "^8.1",
+        "laravel/framework": "^10.0",
+        "laravel/scout": "^10.0"
+    },
+    "require-dev": {
+        "mockery/mockery": "^1.5",
+        "orchestra/testbench": "^8.0",
+        "phpunit/phpunit": "^10.0"
     },
     "extra": {
         "laravel": {

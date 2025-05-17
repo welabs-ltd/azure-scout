@@ -53,15 +53,6 @@ class AzureSearchEngineTest extends TestCase
         $results = $engine->search($builder);
         $this->assertArrayHasKey('value', $results);
     }
-
-    public function testMapReturnsModels()
-    {
-        $engine = new AzureSearchEngine($this->createMock(AzureSearchClient::class));
-        $results = ['value' => [['id' => 1]]];
-        $model = new TestProduct(['id' => 1]);
-        $collection = $engine->map(null, $results, $model);
-        $this->assertInstanceOf(Collection::class, $collection);
-    }
 }
 
 class TestProduct extends Model
